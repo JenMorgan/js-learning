@@ -1,10 +1,22 @@
-let a = prompt("Fill in the first number");
-let b = prompt("Fill in the second number");
-if(a === "" || b === "") {
-    alert("One of the numbers is missing");
+let person = prompt("Fill in your Login");
+if(person) {
+    if(person === "Admin") {
+        let password = prompt("Fill in your password");
+        if(password) {
+            (password === "Admin") ? alert ("Hi!") :
+            alert("Wrong password!");
+        }
+        else {
+            alert("Cancelled!")
+        }
+    }
+    else {
+        alert("I don't know you");
+    }
 }
 else {
-    let result = ((Number(a) + Number(b)) < 4) ? 'Too little' : "Too much";
-    alert(result);
+    alert("Cancelled!");
 }
+
+
 
