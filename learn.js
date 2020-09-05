@@ -1,22 +1,14 @@
-let person = prompt("Fill in your Login");
-if(person) {
-    if(person === "Admin") {
-        let password = prompt("Fill in your password");
-        if(password) {
-            (password === "Admin") ? alert ("Hi!") :
-            alert("Wrong password!");
-        }
-        else {
-            alert("Cancelled!")
-        }
-    }
-    else {
+const person = prompt("Fill in your Login");
+
+if (person) {
+    if (person === "Admin") {
+        const password = prompt("Fill in your password");
+        password
+            ? alert(password === "Admin" ? "Hi!" : "Wrong password!")
+            : alert("Cancelled!");
+    } else {
         alert("I don't know you");
     }
-}
-else {
+} else {
     alert("Cancelled!");
 }
-
-
-
