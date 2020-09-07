@@ -1,8 +1,9 @@
-let n = Number(prompt("Please, fill in the number"));
-simple :
-for (let i = 2; i < n; i++) {
-    for (let a = 2; a < i; a++) {
-        if (i % a === 0) continue simple;
+function pow(x,n) {
+    let result = x;
+    for (let a = 1; a < n; a++) {
+        result = result * x;
     }
-    alert (i);
+    return result;
 }
+
+alert(pow(+prompt("fill in the number"),+prompt("fill in the power")));
